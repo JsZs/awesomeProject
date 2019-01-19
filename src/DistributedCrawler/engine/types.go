@@ -49,6 +49,7 @@ func (f *FuncParser) Serialize() (name string, args interface{}) {
 	return f.name, nil
 }
 
+//返回结构体
 func NewFuncParser(
 	p ParserFunc, name string) *FuncParser {
 	return &FuncParser{

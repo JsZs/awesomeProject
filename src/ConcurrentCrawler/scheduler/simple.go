@@ -5,7 +5,7 @@ import (
 )
 
 type SimpleScheduler struct {
-	workerChan chan engine.Request
+	worker chan engine.Request
 }
 
 func (s *SimpleScheduler) Submit(r engine.Request) {
