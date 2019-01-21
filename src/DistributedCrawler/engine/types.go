@@ -1,12 +1,12 @@
 package engine
 
-//带两个函数的接口
 type Parser interface {
 	Parse(contents []byte, url string) ParseResult
 	Serialize() (name string, args interface{})
 }
 
 type ParserFunc func(contents []byte, url string) ParseResult
+
 type Request struct {
 	Url string
 	//ParserFunc ParserFunc
@@ -49,7 +49,7 @@ func (f *FuncParser) Serialize() (name string, args interface{}) {
 	return f.name, nil
 }
 
-//返回结构体
+//返回新的Parser
 func NewFuncParser(
 	p ParserFunc, name string) *FuncParser {
 	return &FuncParser{

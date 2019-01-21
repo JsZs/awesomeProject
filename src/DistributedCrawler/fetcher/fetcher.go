@@ -1,7 +1,7 @@
 package fetcher
 
 import (
-	"ConcurrentCrawler/config"
+	"awesomeProject/src/ConcurrentCrawler/config"
 	"bufio"
 	"fmt"
 	"golang.org/x/net/html/charset"

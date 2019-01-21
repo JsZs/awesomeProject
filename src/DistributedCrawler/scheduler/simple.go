@@ -1,6 +1,8 @@
 package scheduler
 
-import "DistributedCrawler/engine"
+import (
+	"awesomeProject/src/DistributedCrawler/engine"
+)
 
 type SimpleScheduler struct {
 	workerChan chan engine.Request

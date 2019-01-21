@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"ConcurrentCrawler/config"
-	"DistributedCrawler/engine"
+	"awesomeProject/src/ConcurrentCrawler/config"
+	"awesomeProject/src/DistributedCrawler/engine"
 	"regexp"
 )
 

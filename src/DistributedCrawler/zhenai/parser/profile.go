@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"ConcurrentCrawler/config"
-	"DistributedCrawler/engine"
-	"DistributedCrawler/model"
+	"awesomeProject/src/ConcurrentCrawler/config"
+	"awesomeProject/src/DistributedCrawler/engine"
+	"awesomeProject/src/DistributedCrawler/model"
 	"regexp"
 	"strconv"
 )

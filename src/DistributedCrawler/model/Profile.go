@@ -20,11 +20,11 @@ type Profile struct {
 
 func FromJsonObj(o interface{}) (Profile, error) {
 	var profile Profile
-	s, err := json.Marshal(o)
+	s, err := json.Marshal(o) //数据转换为Json字符串
 	if err != nil {
 		return profile, err
 	}
 
-	json.Unmarshal(s, &profile)
+	json.Unmarshal(s, &profile) //将Json解码到对应的数据结构
 	return profile, err
 }
