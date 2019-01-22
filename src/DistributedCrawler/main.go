@@ -1,4 +1,4 @@
-package DistributedCrawler
+package main
 
 import (
 	"awesomeProject/src/DistributedCrawler/engine"

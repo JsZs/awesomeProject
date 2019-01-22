@@ -6,6 +6,7 @@ import (
 
 //采用的队列方法进行chan控制
 type QueuedScheduler struct {
+	engine.Scheduler
 	//接收数据，每一次接收后会马上被存入数组中
 	requestChan chan engine.Request
 	//接收chan类型进行 chan之间的chan传送 ，简单来说就是用一个chan来传一个chan engine.Request

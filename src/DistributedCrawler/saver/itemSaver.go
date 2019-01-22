@@ -2,9 +2,9 @@ package saver
 
 import (
 	"awesomeProject/src/DistributedCrawler/engine"
-	"awesomeProject/src/gopkg.in/olivere/elastic.v5"
 	"context"
 	"errors"
+	"gopkg.in/olivere/elastic.v5"
 	"log"
 )
 
